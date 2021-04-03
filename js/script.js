@@ -3,11 +3,13 @@
 var tempTc = +prompt("Введите темп. в градусах по Цельсию") ;
 var tempTf = (9 / 5) * tempTc + 32;
 alert(tempTf);
-
+console.log(`температура в градусах по Цельсию: ${tempTc}, температура по Фаренгейту: ${tempTf}`);
 // target 2
 var name1 = "Василий";
 var admin = name1;
 document.write(admin);
+
+console.log(write);
 
 // target 3
 // 1000108
