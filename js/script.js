@@ -1,15 +1,15 @@
 // Home work 1 
 // target 1
-var tempTc = +prompt("Введите темп. в градусах по Цельсию") ;
-var tempTf = (9 / 5) * tempTc + 32;
-alert(tempTf);
-console.log(`температура в градусах по Цельсию: ${tempTc}, температура по Фаренгейту: ${tempTf}`);
+// var tempTc = +prompt("Введите темп. в градусах по Цельсию") ;
+// var tempTf = (9 / 5) * tempTc + 32;
+// alert(tempTf);
+// console.log(`температура в градусах по Цельсию: ${tempTc}, температура по Фаренгейту: ${tempTf}`);
 // target 2
-var name1 = "Василий";
-var admin = name1;
-document.write(admin);
+// var name1 = "Василий";
+// var admin = name1;
+// document.write(admin);
 
-console.log(write);
+//console.log(write);
 
 // target 3
 // 1000108
@@ -39,3 +39,11 @@ console.log(write);
 // DOMContentLoaded может произойти как до, так и после async, никаких гарантий нет.
 // Асинхронные скрипты не ждут друг друга. 
 // Асинхронные скрипты очень полезны для добавления на страницу сторонних скриптов: счётчиков, рекламы и т.д. Они не зависят от наших скриптов, и мы тоже не должны ждать их.
+
+
+// Дополнительное задание с урока
+// var a = 10;
+// var b = 20;
+// [a, b] = [b, a];
+// console.log(a); // console --> 20
+// console.log(b); // console --> 10
