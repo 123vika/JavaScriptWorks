@@ -25,9 +25,7 @@
 // }
 
 // Задание 4
-// var a = +prompt("Введите число от 0 до 15");
 var a = 0;
-// alert(a);
 switch (a) {
     case 0:
         console.log(0);
