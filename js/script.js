@@ -42,8 +42,8 @@
 
 
 // Дополнительное задание с урока
-// var a = 10;
-// var b = 20;
-// [a, b] = [b, a];
-// console.log(a); // console --> 20
-// console.log(b); // console --> 10
+var a = 10;
+var b = 20;
+[a, b] = [b, a];
+console.log(a); // console --> 20
+console.log(b); // console --> 10
