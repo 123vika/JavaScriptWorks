@@ -13,6 +13,7 @@ while (number <= 100) {
 // Задание 2, 3 
 var countBasketPrice = 0;
 var countOfGoods = 0;
+var total = 0;
 var cart = [
     {
         title: "T-Shirt",
@@ -40,9 +41,11 @@ function calculateSumCart(){
     for (var i of cart){
         countOfGoods += i.count;
         countBasketPrice += i.price;
+        total = (countOfGoods * countBasketPrice);
     }
     console.log(countOfGoods);
     console.log(countBasketPrice);
+    console.log(total);
 }
 calculateSumCart();
 // Задание 4
@@ -52,14 +55,14 @@ console.log(i); // 0 условие не выполняется, до i++ не �
                 // Выходит из цикла, печатает 0
 
 // Задание 5
-var row = 20;
-var drowX = "x";
-function printX(){
-    for (var i = 1; i <= row; i++) {
-        for (var j = 1; j <= i; j++) {
-          arr.push(j);
-          console.log(j);
-        }
-        console.log("\n");
-      }
-}
+// var row = 20;
+// var drowX = "x";
+// function printX(){
+//     for (var i = 1; i <= row; i++) {
+//         for (var j = 1; j <= i; j++) {
+//           drowX.push(j);
+//           console.log(j);
+//         }
+//         console.log("\n");
+//     }
+// }
