@@ -1,15 +1,38 @@
 // Задание 1
-var number = 0;
-while (number <= 100) {
-   if ((number / number == 1) && (number / 1 == number)){
-        document.write("<h2>Number is " + number + "</h2> ");
-        number ++; 
-    }else{
+
+//  my version
+// var number = 0;
+// while (number <= 100) {
+//    if ((number / number == 1) && (number / 1 == number)){
+//         document.write("<h2>Number is " + number + "</h2> ");
+//         number ++; 
+//     }else{
         
-        document.write("Число не является простым!");
-        number ++;
-   }
+//         document.write("Число не является простым!");
+//         number ++;
+//    }
+// }
+
+// true version
+var x = 2;
+function isPrime(num){
+    var i = 2;
+    while(i < num / 2){
+        if(num % i == 0){
+            return false;
+        }
+        i++;
+    }
+    return true;
 }
+while(x <= 100){
+    if(isPrime(x) == true){
+        console.log(x);
+    }
+    x++;
+    
+}
+
 // Задание 2, 3 
 var countBasketPrice = 0;
 var countOfGoods = 0;
@@ -53,16 +76,3 @@ for(var i = 0; i > 9; i++){
 }
 console.log(i); // 0 условие не выполняется, до i++ не доходит код. 
                 // Выходит из цикла, печатает 0
-
-// Задание 5
-// var row = 20;
-// var drowX = "x";
-// function printX(){
-//     for (var i = 1; i <= row; i++) {
-//         for (var j = 1; j <= i; j++) {
-//           drowX.push(j);
-//           console.log(j);
-//         }
-//         console.log("\n");
-//     }
-// }
