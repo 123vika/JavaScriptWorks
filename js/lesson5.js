@@ -19,6 +19,12 @@ for (var i = 0; i < 10; i++) {
 
     for (var j = 0; j < 10; j++) {
         var td = document.createElement("td");
+        if(j == 9){
+            td.classList = "rotate";
+        }
+        if(i == 0){
+            td.classList = "rotate";
+        }
         if (j == 0 || j == 9) {
             getColor ();
             switch (i) {
@@ -103,10 +109,6 @@ for (var i = 0; i < 10; i++) {
         if((j == 3 || j == 6) && i == 8){
             td.innerText = whiteBishop;
         }
-        // if(j == 5 && i == 8){
-        //     td.innerText = whiteKing;
-        // }
-
 
         if(j == 4 && i == 1){
             td.innerText = blackQueen;
