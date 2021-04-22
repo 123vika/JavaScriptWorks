@@ -85,8 +85,8 @@ console.log(getNumber(564));
 //         } while (!ok);
 //         switch (e) {
 //             case 1: // Второе действие
-//                 doD();
-//                 break;
+                // //doD();                          case 1: case 2: doD(); break; 
+                // //break;
 //             case 2: // Второе действие
 //                 doD();
 //                 break;
