@@ -18,28 +18,28 @@ for (var i = 0; i < smallImg.length; i++) {
         if (bigImg[this.id] != null){
             bigImg[this.id].style.display = "flex";
         }else{
-            bigImg[this.id].onError(alert("You doesent have big picture for img " + ((parseInt(this.id)) + 1))) ;
+            bigImg[this.id](alert("You doesent have big picture for img " + ((parseInt(this.id)) + 1)));
         }  
     };
 }
 cleanBigPic();
 
 //target 2
-var images = ["img/small/p1.jpg", "img/small/p2.jpg", "img/small/p3.jpg"];
-var pic = 0;
-function next() {
-    var slide = document.getElementById("1");
-    pic++;
-    if (pic >= images.length){
-        pic = 0;
-    }
-    slide.src = images[pic];
-}
-function prev(){
-    var slide = document.getElementById("1");
-    pic--;
-    if (pic < 0){
-        pic = images.length - 1;
-    }
-    slide.src = images[pic];
-}
+// var images = ["img/small/p1.jpg", "img/small/p2.jpg", "img/small/p3.jpg"];
+// var pic = 0;
+// function next() {
+//     var slide = document.getElementById("1");
+//     pic++;
+//     if (pic >= images.length){
+//         pic = 0;
+//     }
+//     slide.src = images[pic];
+// }
+// function prev(){
+//     var slide = document.getElementById("1");
+//     pic--;
+//     if (pic < 0){
+//         pic = images.length - 1;
+//     }
+//     slide.src = images[pic];
+// }
